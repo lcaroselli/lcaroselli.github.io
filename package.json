@@ -2,11 +2,14 @@
   "name": "example-api",
   "version": "1.0.0",
   "description": "MovieTracker",
+  "homepage": "https://lcaroselli.github.io/movie-tracker/",
   "engines": {
     "node": "6.4.0",
     "npm": "3.10.x"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d app",
     "build": "webpack --config ./webpack.config.js",
     "dev-server": "webpack-dev-server --hot --inline --content-base --history-api-fallback",
     "start": "node server.js",
@@ -21,6 +24,7 @@
     "body-parser": "^1.16.0",
     "express": "^4.14.0",
     "express-cors": "0.0.3",
+    "gh-pages": "^2.0.1",
     "history": "^4.7.2",
     "pg-promise": "^3.2.3",
     "react": "^15.4.2",
