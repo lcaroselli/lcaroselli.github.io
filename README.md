@@ -1,4 +1,6 @@
-# Movie Tracker
+# Movie Tracker - Laura Caroselli, Margo Schaedel, David Becker
+
+![MovieTracker Screenshot](/assets/MovieTracker.png?raw=true "MovieTracker Screenshot")
 
 ## Introduction
 This application is working off the The Movie DB API (https://www.themoviedb.org/documentation/api - note you'll need to go create an account to get an API key). The idea of the project is to be able to sign in as a user and save favorite movies.
