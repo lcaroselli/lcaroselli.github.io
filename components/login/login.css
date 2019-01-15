@@ -1,0 +1,91 @@
+form {
+  align-items: center;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  height: 85%;
+  justify-content: center;
+  margin-top: 30px;
+  width: 40%;
+}
+
+.form-wrapper {
+  animation-duration: 1s;
+  animation-name: slide-open;
+  background: #E6E8E5;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+@keyframes slide-open {
+  0% {
+    top: -2000px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+input {
+  height: 30px;
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+form h4 {
+  color: #2EC4B6;
+  margin: 25px 0;
+}
+
+form h2 {
+  color: #2EC4B6;
+}
+
+.form-prompt {
+  text-decoration: underline;
+}
+
+.form-prompt:hover {
+  color: #1C2328;
+  cursor: pointer;
+}
+
+.form-button {
+  background: #E71D36;
+  border: none;
+  color: #FDFFFC;
+  font-size: 20px;
+  width: 50%;
+}
+
+.form-button:hover {
+  background: #2F3942;
+  cursor: pointer;
+}
+
+.form-button:disabled {
+  background: #2F3942;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #E71D36;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 1024px) {
+  form {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  input {
+    width: 80%;
+  }
+}

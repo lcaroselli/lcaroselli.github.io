@@ -1,0 +1,90 @@
+.movie-card {
+  position: relative;
+  background: #000;
+  box-shadow: 7px 4px 4px #1c2328;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.movie-card:hover {
+  cursor: pointer;
+}
+
+.info-hover {
+  position: absolute;
+  top: 95px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 20px 5px;
+}
+
+.info-hover:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  transition: all 0.5s ease-in;
+}
+
+.text {
+  color: #fff;
+  display: none;
+  text-align: center;
+}
+
+.info-hover:hover .text {
+  display: block;
+}
+
+.movie-image {
+  animation-name: fade;
+  animation-duration: 2s;
+  height: 100%;
+  width: 100%;
+}
+
+.movie-title {
+  min-height: 70px;
+  padding: 5px;
+  background: #e71d36;
+  border-bottom: 1px solid #ff9f1c;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hover-section-title {
+  color: #e71d36;
+  font-size: 20px;
+}
+
+.additional-info{
+  padding: 10px;
+}
+
+.favorite-button {
+  font-size: 15px;
+  color: #fff;
+  background: #011627;
+  cursor: pointer;
+  border: none;
+  height: 25px;
+  width: 100%;
+}
+
+.favorite-button:hover {
+  color: #011627;
+  background: #fff;
+}
+
+.favorited {
+  background: #ff9f1c;
+  color: #011627;
+}
